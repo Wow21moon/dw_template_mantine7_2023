@@ -1,5 +1,5 @@
 {
-	"name": "new_project",
+	"name": "dw_templates_2023",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -8,7 +8,8 @@
 		"build": "tsc && vite build",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
-		"lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
+		"lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
+		"create-page": "node scripts/templates/createPage.js"
 	},
 	"dependencies": {
 		"@mantine/core": "7.1.3",

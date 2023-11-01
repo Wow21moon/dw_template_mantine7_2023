@@ -1,8 +1,9 @@
 import '@mantine/core/styles.css'
-import { AppShell, Burger, Group, MantineProvider, Skeleton } from '@mantine/core'
+import { AppShell, Burger, Group, MantineProvider } from '@mantine/core'
 import { theme } from './styles/theme'
 import { useDisclosure } from '@mantine/hooks'
 import { AppRouter } from '@/app/providers/router'
+import { Sidebar } from '@/widgets/Sidebar/ui/Sidebar/Sidebar'
 
 export default function App() {
 	const [opened, { toggle }] = useDisclosure()
@@ -20,12 +21,7 @@ export default function App() {
 					</Group>
 				</AppShell.Header>
 				<AppShell.Navbar p="md">
-					Navbar
-					{Array(15)
-						.fill(0)
-						.map((_, index) => (
-							<Skeleton key={index} h={28} mt="sm" animate={false} />
-						))}
+					<Sidebar />
 				</AppShell.Navbar>
 				<AppShell.Main>
 					<AppRouter />
