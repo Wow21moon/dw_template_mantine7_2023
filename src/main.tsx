@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from '@/app/App'
 import { BrowserRouter } from 'react-router-dom'
 import { StoreProvider } from '@/app/providers/StoreProvider'
-import { YandexMetrika } from '@/shared/ui/YandexMetrika/YandexMetrika'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
@@ -11,7 +10,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 			<StoreProvider>
 				<App />
 			</StoreProvider>
-			<YandexMetrika />
 		</BrowserRouter>
 	</React.StrictMode>,
 )

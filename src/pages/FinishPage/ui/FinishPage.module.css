@@ -1,0 +1,24 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--mantine-color-gray-2);
+    border-radius: var(--mantine-radius-lg);
+    padding: 15px;
+    box-shadow: var(--mantine-shadow-lg);
+}
+
+.ava {
+    width: 100px;
+    height: 100px;
+}
+
+.avaProject {
+    width: 60%;
+}

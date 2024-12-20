@@ -1,0 +1,43 @@
+.memberCard {
+    border-radius: var(--mantine-radius-lg);
+    background: var(--mantine-color-gray-4);
+    box-shadow: var(--mantine-shadow-xl);
+    padding: 20px 30px;
+    align-items: flex-start;
+    transition: 0.3s all;
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.90;
+    }
+}
+
+.description {
+    padding: 15px;
+    border-radius: var(--mantine-radius-md);
+    background: var(--mantine-color-gray-2);
+}
+
+.activy {
+    background: var(--mantine-color-yellow-2);
+}
+
+.ava {
+    height: 150px;
+    width: 150px;
+    box-shadow: var(--mantine-shadow-lg);
+}
+
+.activyDescription {
+    background: var(--mantine-color-yellow-3);
+}
+.disabledDesctiprion {
+    background: var(--mantine-color-red-4);
+}
+
+.disabled {
+    background: var(--mantine-color-red-4);
+}
+
+.disabledAva {
+    opacity: 0.5;
+}

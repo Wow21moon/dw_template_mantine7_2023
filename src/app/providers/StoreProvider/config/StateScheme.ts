@@ -1,6 +1,5 @@
-/*import { FinanceStateScheme } from 'entities/Finance/model/types/finance'*/
+import { SessionStateScheme } from '@/entities/Session'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface StateScheme {
-	/*	finance: FinanceStateScheme*/
+	session: SessionStateScheme
 }

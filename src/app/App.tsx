@@ -1,29 +1,30 @@
 import '@mantine/core/styles.css'
-import { AppShell, Burger, Group, MantineProvider } from '@mantine/core'
+import { AppShell, MantineProvider } from '@mantine/core'
 import { theme } from './styles/theme'
-import { useDisclosure } from '@mantine/hooks'
+import './styles/global.css'
+import './styles/fonts.css'
+import '@mantine/notifications/styles.css'
 import { AppRouter } from '@/app/providers/router'
-import { Sidebar } from '@/widgets/Sidebar/ui/Sidebar/Sidebar'
+import { useGetSessionData } from '@/entities/Session'
+import { PageLoader } from '@/widgets/PageLoader'
+import { Notifications } from '@mantine/notifications'
 
 export default function App() {
-	const [opened, { toggle }] = useDisclosure()
+	const { isLoading } = useGetSessionData()
+
+	if (isLoading) {
+		return (
+			<MantineProvider theme={theme} defaultColorScheme="dark">
+				<PageLoader />
+			</MantineProvider>
+		)
+	}
 
 	return (
-		<MantineProvider theme={theme}>
-			<AppShell
-				header={{ height: 60 }}
-				navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
-				padding="md"
-			>
-				<AppShell.Header>
-					<Group h="100%" px="md">
-						<Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-					</Group>
-				</AppShell.Header>
-				<AppShell.Navbar p="md">
-					<Sidebar />
-				</AppShell.Navbar>
-				<AppShell.Main>
+		<MantineProvider theme={theme} defaultColorScheme="dark">
+			<Notifications />
+			<AppShell>
+				<AppShell.Main mih={'100vh'} style={{ display: 'flex' }}>
 					<AppRouter />
 				</AppShell.Main>
 			</AppShell>

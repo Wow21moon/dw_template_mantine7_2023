@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    padding: 50px 30px;
+    flex-grow: 1;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.light {
+    background: #181818;
+    color: black;
+}

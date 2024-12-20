@@ -1,0 +1,121 @@
+.main {
+    max-width: var(--mantine-breakpoint-lg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dateWrapper {
+    position: relative;
+}
+
+.date {
+    font-size: 66px;
+    z-index: 5;
+    position: relative;
+    @media (max-width: 600px) {
+        font-size: 35px;
+    }
+}
+
+.shineDate {
+    position: absolute;
+    top: -24px;
+    right: -37px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    @media (max-width: 600px) {
+        top: -40px;
+        right: -50px;
+    }
+}
+
+.logo {
+    width: 150px;
+    @media (max-width: 600px) {
+        width: 30%;
+    }
+}
+
+
+
+
+.text {
+    font-family: "Caviar Dreams", serif;
+    font-size: 24px;
+    @media (max-width: 600px) {
+        text-align: center;
+
+    }
+
+}
+
+.footerText {
+    font-family: "Caviar Dreams", serif;
+    font-size: 20px;
+    @media (max-width: 600px) {
+        text-align: center;
+
+    }
+
+}
+
+
+.body {
+    position: relative;
+}
+
+.footer {
+    position: relative;
+}
+
+.imgInBody {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+
+.title {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(310deg, rgba(206,154,0,1) 26%, rgba(255,242,148,1) 49%, rgba(179,134,0,1) 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+    line-height: 70px;
+    padding: 15px 0;
+    display: none;
+    @media (max-width: 800px) {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.imgTitle {
+    width: 700px;
+    @media (max-width: 800px) {
+        display: none;
+        width: 100%;
+    }
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

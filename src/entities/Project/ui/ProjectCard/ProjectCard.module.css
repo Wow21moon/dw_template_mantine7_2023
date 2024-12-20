@@ -1,0 +1,45 @@
+.projectCard {
+    background: var(--mantine-color-gray-1);
+    height: 100%;
+    border-radius: var(--mantine-radius-lg);
+    overflow: hidden;
+    transition: 0.3s all;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    @media (max-width: 992px) {
+        max-width: 500px;
+    }
+}
+
+.btn {
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+
+}
+
+.body {
+    padding: 30px;
+}
+
+.active {
+    background: var(--mantine-color-yellow-2);
+}
+
+.activeImg {
+    opacity: 0.8;
+}
+
+
+.disabled {
+    background: var(--mantine-color-red-2);
+}
+
+.disabledImg {
+    opacity: 0.5;
+}

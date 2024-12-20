@@ -1,0 +1,1 @@
+export {VoteEmployee} from './ui/VoteEmployee/VoteEmployee'
