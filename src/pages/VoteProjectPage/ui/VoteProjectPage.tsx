@@ -51,7 +51,7 @@ const VoteProjectPage = () => {
 	return (
 		<Container pb={150}>
 			<Title ta={'center'} mb={40} c={'white'}>
-				ВЫБЕРЕТЕ ТРИ ПРОЕКТА ГОДА
+				ВЫБЕРИТЕ ТРИ ПРОЕКТА ГОДА
 			</Title>
 			<Grid gutter={{ base: 30 }}>
 				{data.list.map((project) => (
