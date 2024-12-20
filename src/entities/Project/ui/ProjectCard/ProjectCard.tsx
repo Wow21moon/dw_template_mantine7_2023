@@ -53,7 +53,7 @@ export const ProjectCard: FC<ProjectCardProps> = memo(
 								{item.name}
 							</Text>
 							<Group wrap={md ? 'wrap' : 'nowrap'}>
-								<Text c={'gray.5'}>Руководитель:</Text>
+								<Text c={'gray.5'}>Руководитель/Проектная группа</Text>
 								<Text>{item.fio}</Text>
 							</Group>
 							<ScrollArea h={150}>
